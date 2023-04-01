@@ -18,14 +18,7 @@ def pull_sentiment(symbol):
         return None, None
 
 
-sentiments = {}
-for symbol in tickers[:50]:
-    price, revenue = fetch_price_and_revenue(symbol)
-    if price and revenue:
-        ps_ratio = price / revenue
-        ps_ratios[symbol] = ps_ratio
+sentiments = []
+for symbol in tickers[:5]:
+    sentiments.append(pull_sentiment(symbol))
 
-lowest_ps_ratio_stock = min(ps_ratios, key=ps_ratios.get)
-lowest_ps_ratio_value = ps_ratios[lowest_ps_ratio_stock]
-
-print(f'The stock with the lowest P/S ratio is {lowest_ps_ratio_stock} with a value of {lowest_ps_ratio_value}.')
