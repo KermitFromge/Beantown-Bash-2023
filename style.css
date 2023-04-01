@@ -1,5 +1,6 @@
 body {
-    margin: 5%
+    margin: 5%;
+    text-align: center;
 }
 
 #container {
@@ -15,9 +16,25 @@ body {
     padding: 1rem;
     margin: 1rem;
     text-align: left;
+    display: flex;
+    
 }
 
 .stockname {
     padding-top: 0rem;
     margin-top: 0rem;
+}
+
+.stockpic {
+    margin: auto;
+    height: 9rem;
+    width: 60%;
+    border-radius: 25px;
+}
+
+#shitton {
+    margin: 6rem;
+    size: fit-content;
+    font-size: 3rem;
+    padding: 1rem;
 }
