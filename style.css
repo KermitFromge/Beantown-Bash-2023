@@ -54,12 +54,17 @@ h1 {
     size: fit-content;
     font-size: 3rem;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 25px;
     margin-right: 1rem;
+    border-width: 0.3rem;
+    border-color:grey;
 }
 
 .multi {
     margin: 0rem;
+    border-radius: 5px;
+    border-width: 0.15rem;
+    font-weight: bold;
 }
 
 #shitstar {
