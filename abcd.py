@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import time 
 import finnhub
 
 
@@ -14,8 +15,8 @@ tickers = df['Symbol'].tolist()
 
 def pull_sentiment(symbol):
     sentiment_data = finnhub_client.stock_insider_sentiment(symbol, '2023-03-31', '2023-04-01') 
-    print(sentiment_data[1])
-    return(sentiment_data.get(['mspr']))
+    print(sentiment_data)
+    return(sentiment_data.get('data')[0].get('mspr'))
 
 sentiment_values = []
 for symbol in tickers:
@@ -24,6 +25,8 @@ for symbol in tickers:
         sentiment_values.append(mspr)
     else:
         print(f"Failed to get mspr for {symbol}")
+
+    time.sleep(2) 
 
 
 print(sentiment_values)
