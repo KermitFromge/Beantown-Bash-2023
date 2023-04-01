@@ -1,0 +1,23 @@
+body {
+    margin: 5%
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stock {
+    background-color: #dddddd;
+    height: 10rem;
+    width: 20%;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.stockname {
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
