@@ -1,16 +1,24 @@
 body {
     margin: 5%;
     text-align: center;
+
 }
 
 h1 {
     font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+}
+
+#shit {
+    color:brown;
+    font-weight: bolder;
 }
 
 .stock {
@@ -44,4 +52,26 @@ h1 {
     font-size: 3rem;
     padding: 1rem;
     border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.multi {
+    margin: 0rem;
+}
+
+#shitstar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0rem;
+}
+
+#bottomshit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+#buttoncarrier {
+    display:flex;
+    flex-direction: column;
 }
